@@ -13,4 +13,6 @@ using ConferenceAPI.Models;
         }
 
         public DbSet<ConferenceAPI.Models.Conference> Conference { get; set; } = default!;
+
+public DbSet<ConferenceAPI.Models.Talk> Talk { get; set; } = default!;
     }
