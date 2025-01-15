@@ -86,7 +86,7 @@ namespace ConferenceAPI.Controllers
             _context.Talk.Add(talk);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTalk", new { id = talk.Id }, talk);
+            return Created();
         }
 
         // DELETE: api/Talks/5
